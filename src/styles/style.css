@@ -1,0 +1,293 @@
+@import "color.css";
+/* Initialisation*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background);
+}
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+/*Réutilisables*/
+.row{
+    width: 80%;
+    margin: auto;
+}
+/*Titres*/
+h2,
+h3,
+p,
+a,
+label,
+.logout{
+    color: var(--text);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+h1{
+    font-size: 100%;
+}
+/*Header*/
+header {
+    position: absolute;
+    top: 0;
+}
+.name {
+    background-color: #000000aa;
+    height: 100%;
+}
+.header{
+    background-image: url(../images/fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: #000033;
+    position: fixed;
+    z-index: 1;
+}
+label.logo img{
+    width: 70px;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 80px;
+}
+nav a,
+nav li label{
+    color: #dddddd;
+    font-size: 18px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav a:hover,
+.logout:hover{
+    border-bottom: 1px solid #00ffff;
+    transition: .5s;
+    cursor: pointer;
+}
+label a:hover,
+.social a:hover{
+    border: none;
+}
+.check{
+    display: none;
+}
+nav #icon{
+    color: #dddddd;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.name{
+    color: #ffffff;
+    font-size: 50px;
+    padding-top: 40vh;
+    padding-left: 2rem;
+}
+.name p{
+    text-transform: none;
+}
+.logout{
+    background-color: #00000000;
+    border: none;
+    font-size: 110%;
+    padding: 5px 10px;
+}
+.hamburger,
+.toggler {
+    display: none;
+}
+.mode {
+    height: 50px;
+    width: 50px;
+    background-color: #00000000;
+    border: none;
+    margin: 10px 100px;
+    position: absolute;
+    cursor: pointer;
+}
+.bi-brightness-high,
+.bi-moon {
+    font-size: 200%;
+    color: #ffffff;
+}
+/*Main*/
+.contact {
+    margin-top: 100px;
+}
+#section {
+    width: 80%;
+    margin: 20px 50%;
+    transform: translate(-50%);
+}
+.temps{
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffff90;
+    text-align: center;
+    float: left;
+    margin-top: 15px;
+    margin-left: 140px;
+    width: 400px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skill{
+    height: 20px;
+    width: 70%;
+    margin: 10px 50%;
+    transform: translate(-50%);
+    box-sizing: content-box;
+    position: relative;
+    background-color: #aaaaaa;
+    border-radius: 25px;
+    padding-bottom: 3px;
+}
+.skill span{
+    display: block;
+    background: #00ffff;
+    border-radius: 25px;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects img{
+    height: 150px;
+    width: 250px;
+    margin: 10px 20px;
+    transition: transform 0.5s;
+}
+.projects img:hover {
+    transform: scale(1.05);
+}
+#date{
+    font-size: 150%;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+#heure_exacte{
+    font-size: 150%;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.box{
+    width: 100%;
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+    background-color: var(--box);
+}
+h2{
+    border-bottom: 1px solid #00ffff;
+    padding-bottom: 5px;
+}
+h3{
+    padding-top: 10px;
+}
+p,
+a{
+    padding-top: 10px;
+}
+input, select, textarea{
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px #008b8b;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.submit{
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #008b8b;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.submit:hover,
+.submit a:hover{
+    background-color: #ffffff;
+    color: #008b8b;
+    border: none;
+    transition: 0s;
+}
+/*Footer*/
+footer{
+    background-color: #000033;
+    height: 100px;
+}
+.social{
+    float: left;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+#copy{
+    color: #ffffff;
+    float: right;
+    margin-top: 35px;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+.social i{
+    font-size: 200%;
+}
+.bi-github{
+    padding-right: 20px;
+    height: 40px;
+}
+.bi-linkedin{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+}
+.bi-facebook{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+}
+.bi-instagram{
+	padding-left: 20px;
+    height: 40px;
+}
+.bi-github:hover{
+    color: #171515;
+}
+.bi-linkedin:hover{
+    color: #0077b5;
+}
+.bi-facebook:hover{
+    color: #3b5998;
+}
+.bi-instagram:hover{
+    color: #7232bd;
+}

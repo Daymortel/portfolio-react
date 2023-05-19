@@ -1,0 +1,15 @@
+:root {
+    --background : #c3c3c3;
+    --text : #555555;
+    --box : #ffffff;
+}
+.light {
+    --background : #c3c3c3;
+    --text : #555555;
+    --box : #ffffff;
+}
+.dark {
+    --background : #3c3c3c;
+    --text : #aaaaaa;
+    --box : #000000;
+}
